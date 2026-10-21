@@ -1,0 +1,26 @@
+[project]
+name = "oregonator"
+version = "0.1.0"
+description = "Stability and Hopf-bifurcation analysis of the Oregonator model of the Belousov-Zhabotinsky reaction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pillow",
+    "scipy",
+    "sympy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oregonator"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
