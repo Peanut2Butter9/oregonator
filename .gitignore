@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv
+*.egg-info/
+.pytest_cache/
+
+# LaTeX build files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# OS
+.DS_Store
