@@ -3,14 +3,11 @@
 **Slides:** [slides/slide.pdf](slides/slide.pdf) (corrected) · [original/](original/) (June 2024, as submitted) ·
 **Numbers:** [results/summary.json](results/summary.json)
 
-This repository is a from-scratch reproduction of a Dynamical Systems
+This repository is a reproduction of a Dynamical Systems
 (*Sistem Dinamik*) mini project at Universitas Gadjah Mada (Kelompok 2, June
 2024). The project analysed the stability of the three-variable Oregonator
 model of the Belousov–Zhabotinsky (BZ) reaction and claimed that it oscillates
-for 1/4 < f < 1/2. Only the Beamer source and two MATLAB screenshots
-survived, so every derivation was redone in SymPy and every simulation was
-rewritten in Python (SciPy, Radau). Doing so corrected several errors in the
-original slides.
+for 1/4 < f < 1/2.
 
 The scaled model is
 
@@ -109,9 +106,6 @@ cd slides && latexmk -pdf slide.tex     # corrected slides
 
 ## Limitations
 
-- The reference paper could not be retrieved (the ITS journal site did not
-  resolve on 21 October 2026), so the derivations were checked against the
-  model itself rather than against the paper.
 - The f behind the original figures is fitted on a grid (step 0.05 below
   f = 1.5, 0.1 above) to curves digitised from JPEG-compressed screenshots.
 - The bistable window was found by direct simulation from a point on the
